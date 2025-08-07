@@ -1,0 +1,39 @@
+{
+    "name": "alifahmmed/env-editor-plugin",
+    "type": "library",
+    "description": "A Laravel filament plugin for env edit",
+    "keywords": ["package", "plugin", "laravel", "filament", "env"],
+    "homepage": "https://github.com/s-m-alif-ahmmed/env-editor-plugin",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "S M Alif Ahmmed",
+            "email": "smalifahmmed@gmail.com",
+            "homepage": "https://smalifahmmed.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+        "filament/filament": "^3.0|^3.1|^3.2|^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlifAhmmed\\EnvEditorPlugin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlifAhmmed\\EnvEditorPlugin\\EnvEditorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
